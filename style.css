@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  flex-shrink: 0;
+  margin-bottom: 24px;
+}
+
+.dog-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 430px;
+  height: 600px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("/images/dog-teddy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px; /* Add some padding to create space between the text and the edges */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.dog-profile p {
+  margin: 8px 0; /* Add margin to create spacing between each <p> element */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
