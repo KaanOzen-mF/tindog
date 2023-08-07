@@ -1,68 +1,130 @@
 body {
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
-.header-container {
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.dog-name-age {
+  color: #f8f8f8;
+}
+
+.dog-phrase {
+  color: #b7b7b7;
+}
+
+/* LAYOUT */
+
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #f6f7fb 100%);
+}
+
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px;
+  margin: 0.5em 0;
 }
 
-.header-container img {
-  width: 15%;
+.icon-profile,
+.icon-chat {
+  width: 10%;
 }
 
-.dog-profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.logo {
+  width: 20%;
+  margin: 0 auto;
 }
 
-.dog-profile img {
-  width: 40%;
+.icon-profile {
+  margin-left: 1em;
+}
+
+.icon-chat {
+  margin-right: 1em;
+}
+
+.dog-pic {
+  width: 50%;
+  margin: 0 auto;
   border-radius: 15px;
 }
 
-.dog-profile-text-container {
+.dog-card {
+  position: relative;
+}
+
+.dog-info {
   position: absolute;
   bottom: 0;
-  left: 32%;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
+  left: 30%;
+  margin-left: 0.5em;
 }
 
-footer {
+.dog-name-age {
+  margin: 0;
+}
+
+.dog-phrase {
+  margin: 0 0 0.5em 0;
+}
+
+#dog-verdict {
+  position: absolute;
+  top: 10%;
+  left: 27%;
+  width: 20%;
+  transform: rotate(-45deg);
+}
+
+.buttons {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.cross-container,
+.hearth-container {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 8px;
+
+  background: #ffffff;
+  box-shadow: 0px 10px 20px #e9e9ea;
+
+  cursor: pointer;
 }
 
-.heart-btn,
-.cross-btn {
-  margin: 0 12px;
-  border-radius: 50%; /* Make the image border circular */
-  background-color: #e9e9ea;
-  padding: 12px;
+.cross-container {
+  margin-right: 5em;
 }
 
-.cross-btn:hover {
-  background-color: #ffe7ef;
-  fill: #ffe7ef;
-  filter: drop-shadow(0px 10px 20px #edd9df);
+.cross-container:hover,
+.cross-container:focus {
+  background: #ffe7ef;
+  box-shadow: 0px 10px 20px #edd9df;
 }
 
-.heart-btn:hover {
-  background-color: #dbfff4;
-  fill: #dbfff4;
-  filter: drop-shadow(0px 10px 20px #ccf1e6);
+.hearth-container:hover,
+.hearth-container:focus {
+  background: #dbfff4;
+  box-shadow: 0px 10px 20px #ccf1e6;
+}
+
+.hidden {
+  display: none;
 }
