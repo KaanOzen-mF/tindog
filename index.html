@@ -1,37 +1,32 @@
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <img src="/images/icon-profile.png" alt="icon-profile" />
-        <img src="/images/logo.png" alt="logo" />
-        <img src="/images/icon-chat.png" alt="icon-chat" />
-      </div>
+      <img class="icon-profile" src="/images/icon-profile.png" />
+      <img class="logo" src="/images/logo.png" />
+      <img class="icon-chat" src="/images/icon-chat.png" />
     </header>
-    <main>
-      <div class="dog-profile">
-        <img src="/images/dog-teddy.jpg" alt="" />
-        <div class="dog-profile-text-container">
-          <p>Teddy, 30</p>
-          <p>How you doin?</p>
+
+    <section>
+      <div id="dog-card"></div>
+      <div class="buttons">
+        <div class="cross-container" id="cross-btn">
+          <img class="cross" src="/images/icon-cross.png" />
+        </div>
+        <div class="hearth-container" id="like-btn">
+          <img class="hearth" src="/images/icon-heart.png" />
         </div>
       </div>
-    </main>
+    </section>
 
-    <footer>
-      <div class="cross-btn">
-        <img src="images/icon-cross.png" alt="" />
-      </div>
-      <div class="heart-btn">
-        <img src="images/icon-heart.png" alt="" />
-      </div>
-    </footer>
-    <script src="/index.js" type="module"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
