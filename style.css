@@ -6,38 +6,35 @@ body {
   padding: 0;
 }
 
-header {
+.header-container {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  height: 60px;
-  flex-shrink: 0;
-  margin-bottom: 24px;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.header-container img {
+  width: 15%;
 }
 
 .dog-profile {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  width: 430px;
-  height: 600px;
-  flex-shrink: 0;
-  border-radius: 15px;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url("/images/dog-teddy.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 20px; /* Add some padding to create space between the text and the edges */
-  box-sizing: border-box; /* Include padding in the element's total width and height */
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.dog-profile p {
-  margin: 8px 0; /* Add margin to create spacing between each <p> element */
+.dog-profile img {
+  width: 40%;
+  border-radius: 15px;
+}
+
+.dog-profile-text-container {
+  position: absolute;
+  bottom: 0;
+  left: 32%;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -45,6 +42,27 @@ header {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  padding: 8px;
+}
+
+.heart-btn,
+.cross-btn {
+  margin: 0 12px;
+  border-radius: 50%; /* Make the image border circular */
+  background-color: #e9e9ea;
+  padding: 12px;
+}
+
+.cross-btn:hover {
+  background-color: #ffe7ef;
+  fill: #ffe7ef;
+  filter: drop-shadow(0px 10px 20px #edd9df);
+}
+
+.heart-btn:hover {
+  background-color: #dbfff4;
+  fill: #dbfff4;
+  filter: drop-shadow(0px 10px 20px #ccf1e6);
 }
